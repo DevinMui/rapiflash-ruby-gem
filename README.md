@@ -1,6 +1,6 @@
 # Rapiflash Ruby Gem'
 
-This gem is a wrapper of the Rapiflash API and allows developers to gather data from Rapiflash devices around the world such as flood data and river water level.
+This official gem is a wrapper of the Rapiflash API and allows developers to gather data from Rapiflash devices around the world such as flood data and river water level.
 
 ### Usage
 
@@ -20,7 +20,33 @@ Flood.all
 
 # returns
 # [#<Flood:0x000000026b34e0 @id=6, @normal_level=6.0, @current_level=8.0, @flooded=true, @upstream=nil, @location="Georgia", @created_at="2015-05-22T02:11:49.396Z", @updated_at="2015-05-22T02:11:49.396Z">, #<Flood:0x000000026b3378 @id=5, @normal_level=6.0, @current_level=8.0, @flooded=true, @upstream=nil, @location="Georgia", @created_at="2015-05-22T01:53:46.659Z", @updated_at="2015-05-22T01:53:46.659Z">, #<Flood:0x000000026b31e8 @id=4, @normal_level=3.5, @current_level=5.0, @flooded=true, @upstream=nil, @location="Georgia", @created_at="2015-05-22T01:18:15.395Z", @updated_at="2015-05-22T01:18:15.395Z">, #<Flood:0x000000026b3080 @id=3, @normal_level=3.5, @current_level=5.0, @flooded=true, @upstream=nil, @location="Georgia", @created_at="2015-05-22T00:32:26.934Z", @updated_at="2015-05-22T00:32:26.934Z">, #<Flood:0x000000026b2ea0 @id=2, @normal_level=3.0, @current_level=5.0, @flooded=false, @upstream=nil, @location="Australia", @created_at="2015-05-22T00:09:26.892Z", @updated_at="2015-05-22T00:09:26.892Z">, #<Flood:0x000000026b2d10 @id=1, @normal_level=4.5, @current_level=5.0, @flooded=false, @upstream=nil, @location="Australia", @created_at="2015-05-21T23:55:39.455Z", @updated_at="2015-05-21T23:55:39.455Z">]
+
+# getting a single value
+
+Flood.find(1).flooded # you can substitute the .flooded for any other value
 ```
+
+### Columns
+
+The Rapiflash API gives a bunch of data columns that you can call to use the data.
+
+Below is all the data values you can obtain:
+
+`.id` => Retrieves the id of the record
+
+`.flooded` => Retrieves data if the river is flooded
+
+`.current_level` => Retrieves the current water level of the river
+
+`.normal_level` => Retrieves the normal water level of the river
+
+`.upstream` => Returns an integer detailing if the river is upstream or not
+
+`.created_at` => Returns the time the record was created at
+
+`.updated_at` => Returns the time the record was updated at 
+
+`.location` => Retrieves the location of the river
 
 ### Contributors
 
