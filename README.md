@@ -2,6 +2,10 @@
 
 This official gem is a wrapper of the Rapiflash API and allows developers to gather data from Rapiflash devices around the world such as flood data and river water level.
 
+### Install
+
+Simply run `gem install rapiflash` or `sudo gem install rapiflash`
+
 ### Usage
 
 ```
