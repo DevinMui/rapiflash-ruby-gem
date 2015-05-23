@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'rapiflash'
-  s.version     = '0.1.0'
+  s.version     = '0.1.1'
   s.date        = '2010-04-28'
   s.summary     = "Wraps Rapiflash API into a Ruby gem"
   s.description = "This gem is a wrapper of the Rapiflash API and allows developers to gather data from Rapiflash devices around the world."
