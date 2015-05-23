@@ -1,4 +1,4 @@
-# Rapiflash Ruby Gem'
+# Rapiflash Ruby Gem
 
 This official gem is a wrapper of the Rapiflash API and allows developers to gather data from Rapiflash devices around the world such as flood data and river water level.
 
